@@ -1,0 +1,31 @@
+sql4
+
+terminal Commands
+
+mysql -u root -p
+
+show databases;
+
+create database a_db;
+
+use a_db;
+
+show tables;
+
+create table students(
+      id int unsigned primary Key auto_increment,
+      name varchar(255)
+);
+
+show tables 
+
+  explain students; or describe students; or desc students
+
+insert into students (name) values ('anurag');
+
+select * from students;
+
+
+
+
+

@@ -1,0 +1,48 @@
+Sql2
+
+1. Write a SQL Syntax to join two tables ?
+command -> SELECT tblname.colname,tblname.colname,.. FROM table1 INNER JOIN table2 ON table1.col=table2.col
+
+Eg. student_tbl
+       id (primary Key)
+       student_name
+
+    course_tbl
+       id(Primary key)
+       course_name
+       student_id (Foreign Key)
+
+Output 
+        stu_id  student  course
+
+SLECT student_tbl.id as stu_id, student_tbl.student_name as student, course_tbl.course_name as course FROM student_tbl INNER JOIN course_tbl ON student_tbl.id = course_tbl.student_id;
+
+
+
+
+2. Write a SQL Syntax to join three tables?
+
+Eg->             student_tbl             table3
+                 id (primary Key)
+                 student_name
+
+              course_tbl                  table2
+                id(Primary key)
+                course_name
+                student_id (Foreign Key)
+
+               student_course_tbl          table1
+                  id (PK)
+                  stu_id (Fk)
+                  course_id (Fk)
+
+output     stu_id student_fullname  course
+  
+
+SELECT student_course_tbl.stu_id, student_tbl.student_name as student_fullname, course_tbl.course_name FROM student_course_tbl  INNER JOIN student_tbl INNER JOIN course_tbl ON student_course_tbl.stu_id=student_tbl.id AND student_course_tbl.course_id=course_tbl.id
+
+
+
+
+
+

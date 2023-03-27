@@ -1,0 +1,32 @@
+sql3 
+
+Data(inside Database)
+
+Database ---> Tables --->Data
+
+DDL
+CREATE -> for creating table
+
+DML
+INSERT -> for inserting inside table
+
+INSERT INTO tablename (colname1,colname2) VALUES (row1,row2);
+
+DQL
+SELECT
+SELECT colname1,colname2,... FROM table_name;
+
+Eg-> INSERT INTO student_tbl (name,surname) VALUES ('anurag','mishra');
+
+SELECT * FROM students_tbl;
+
+output-> name    surname
+         anurag   mishra
+
+INSERT INTO student_tbl (name,surname) VALUES ('akshat','mishra');
+
+SELECT * FROM students_tbl;
+
+output-> name    surname
+         anurag   mishra
+         akshat   mishra
